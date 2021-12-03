@@ -10,6 +10,6 @@ urlpatterns = [
     # slug 2 = keyword, matches the slug parameter in get method
     # of PostDetail class in 
     # blog/views.py. Tha's how we link them together.
-    path('like/<slug:slug>/', views.PostLike.as_view, name='post_like')
+    path('like/<slug:slug>/', views.PostLike.as_view(), name='post_like')
     # post_like är namnet på url i formen gjord i post_detail
 ]
