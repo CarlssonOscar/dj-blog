@@ -74,7 +74,9 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
+
 
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
